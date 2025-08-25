@@ -22,7 +22,7 @@ This project implements a robust framework for importing, transforming, and vali
 - **Import Set Tables & Transform Maps:**
   - `u_is_scheduled_user` → Transform Map: `TM HR User Dump`
   
-- **Transform Scripts Implemented:**
+- **Transform Script Implemented:**
   
   **onStart Script**
   ```javascript
@@ -35,12 +35,11 @@ This project implements a robust framework for importing, transforming, and vali
           managerMap[grManagerUser.email.toString().toLowerCase()] = grManagerUser.sys_id.toString();
       }
   })(source, map, log, target);
-````
 
-**onBefore Script**
 
-```javascript
-(function runTransformScript(source, map, log, target) {
+ **onBefore Script**
+   ```javascript
+  (function runTransformScript(source, map, log, target) {
     // Split full name into first and last names
     if (source.u_full_name) {
         var parts = source.u_full_name.trim().split(/\s+/);
@@ -72,7 +71,6 @@ This project implements a robust framework for importing, transforming, and vali
     }
 })(source, map, log, target);
 ```
-
 ### 3. Scheduled Jobs
 
 * **Purpose:** Automate nightly imports and log results.
@@ -103,24 +101,10 @@ This project implements a robust framework for importing, transforming, and vali
 
 ---
 
-## GitHub Artifacts
-
-* `users_for_Importset.csv`
-* `user_forScheduledJob.csv`
-* `users_for_TestingDuplicates.csv`
-* Transform Map XML (`TM HR User Dump`)
-
----
-
 ## Notes
 
 * Framework is extendable to support REST-based imports.
 * Duplicate prevention handled via coalesce; can be adjusted for custom business rules.
 * Logging included for manager mapping and import issues.
 
-```
-
-If you want, I can also create a **more concise, visually clean version** with **sections for setup, usage, and examples** so it looks professional on GitHub.  
-
-Do you want me to do that?
 ```
