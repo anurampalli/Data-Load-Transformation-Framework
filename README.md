@@ -77,7 +77,7 @@ This project implements a robust framework for importing, transforming, and vali
 * **Status:**
 
   * Nightly job works for file attachments.
-  * FTP import not functional; REST integration may be implemented later.
+  * FTP import not functional for FTP Server setup on local machine (Firewall Issue I reckon). However the Scheduled Import by name **Custom Load Wing FTP Data** functions as expected; REST integration may be implemented later.
 
 ---
 
