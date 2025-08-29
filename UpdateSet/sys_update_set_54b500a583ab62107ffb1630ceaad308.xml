@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2025-08-29 02:26:16">
+<sys_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<base_update_set display_value=""/>
+<batch_install_plan display_value=""/>
+<completed_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</completed_by>
+<completed_on>2025-08-29 02:26:06</completed_on>
+<description>Project Name: Data Load &amp; Transformation Framework
+One-line Summary: Built data transformation framework for seamless HR-to-ServiceNow integration.
+Project Specification:
+•	Modules: Import Sets, Transform Maps, Scheduled Jobs
+•	Tasks:
+o	Create a data source (CSV/XML) with 50 sample employee records (name, dept, email).
+o	Build Import Set table and Transform Map to map data → sys_user.
+o	Write Transform Scripts to normalize email IDs (lowercase, strip spaces).
+o	Schedule nightly job to import file and log results.
+o	Add Business Rule to prevent duplicate user records.
+•	Deliverable: Automated HR data import with integrity checks.
+•	GitHub URL: https://github.com/anurampalli/Data-Load-Transformation-Framework.git
+</description>
+<install_date/>
+<installed_from/>
+<is_default>false</is_default>
+<merged_to display_value=""/>
+<name>US Data Load &amp; Transformation Framework</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_sys_id display_value=""/>
+<state>complete</state>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-08-23 12:46:10</sys_created_on>
+<sys_id>54b500a583ab62107ffb1630ceaad308</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-08-29 02:26:06</sys_updated_on>
+</sys_update_set>
+</unload>
