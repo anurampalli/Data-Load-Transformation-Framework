@@ -32,7 +32,7 @@ This project implements a robust framework for importing, transforming, and vali
       var grManagerUser = new GlideRecord("sys_user");
       grManagerUser.query();
       while (grManagerUser.next()) {
-          managerMap[grManagerUser.email.toString().toLowerCase()] = grManagerUser.sys_id.toString();
+          managerMap[grManagerUser.manager.email.toString().toLowerCase()] = grManagerUser.sys_id.toString();
       }
   })(source, map, log, target);
 
